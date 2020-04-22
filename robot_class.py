@@ -71,9 +71,9 @@ class robot:
             dx +=  noise
             dy += noise
             
-            if dx > self.measurement_range:
+            if abs(dx) > self.measurement_range:
                 continue
-            if dy > self.measurement_range:
+            if abs(dy) > self.measurement_range:
                 continue
             measurements.append([i, dx, dy])
                 
